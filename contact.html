@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>One More Rep</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lift.css">
+    <link rel="icon" href="images/letterc.ico" type="image/x-icon" />
+</head> 
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Contact</h1>
+            <div id="tag">Lift Heavy Things!</div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="exercise1.html">Deadlift/Squat</a></li>
+                <li><a href="exercise2.html">Rows/Bench</a></li>
+                <li><a href="exercise3.html">Overhead Press</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Contact Information</h2>           
+            <form method="get">
+                <fieldset>
+                    <legend>Guest Information</legend>
+                    First Name: <input type="text" onfocus="myFunction(this)"><br /><br />
+                    <script>
+                        function myFunction(x) {
+                            x.style.background = "yellow";
+                        }
+                    </script>
+                   Last Name: <input type="text" onfocus="myFunction(this)"><br /><br />
+                    <script>
+                        function myFunction(x) {
+                            x.style.background = "yellow";
+                        }
+                    </script>
+                    <label>E-mail: <input type="text" name="email" id="email"></label><br><br>
+                </fieldset>
+                <label for="comments">Comments:</label><br>
+                <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+                <input type="submit" value="Contact"> <input type="reset">
+            </form>
+        </main>
+        <footer>
+            <a href="home.html">Home</a>
+            <a href="exercise1.html">Deadlift/Squat</a> &nbsp;
+            <a href="exercise2.html">Rows/Bench</a> &nbsp;
+            <a href="exercise3.html">Overhead Press</a> &nbsp;
+            <a href="recipes.html">Recipes</a> &nbsp;
+            <a href="contact.html">Contact</a>
+            <hr />Published by One More Rep Inc.<br />
+            Copyright &copy; 2020 Ben Ward<br />
+            <a href="mailto:onemorerep@gmail.com">onemorerep@gmail.com</a>
+            <p id="demo"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d;
+            </script>
+            <script>
+                var m = "This page was last updated: " + document.lastModified;
+                var p = m.length - 8;
+                document.writeln("<center>");
+                document.write(m.substring(p, 0));
+                document.writeln("</center>");
+            </script>
+        </footer>
+</div >
+</body >
+</html >
+
+

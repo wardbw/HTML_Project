@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>One More Rep</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lift.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>   
+    <script>alert("Welcome to One More Rep!");</script>
+    <script>
+        var userName;
+        userName = prompt("Name Please!");
+        document.write("<h2>Hello " + userName + " Welcome to our page&#33</h2>");
+    </script>
+    <div id="wrapper">
+        <header>
+            <h1>One More Rep</h1>
+            <div id="tag">Lift Heavy Things!</div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="exercise1.html">Deadlift/Squat</a></li>
+                <li><a href="exercise2.html">Rows/Bench</a></li>
+                <li><a href="exercise3.html">Overhead Press</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Welcome to the world of weight lifting</h2>
+            <p>
+                We are One More Rep, and we specialize in helping skinny guys bulk up. We&#39;re
+                here to help those hard gainers pack on solid muscle. Are you tired of
+                feeling weak and self conscious? Well you've stumbled into the right place.
+                We&#39;ll show you the proper way to do the "Big Five" lifts, and a recipe
+                page to help you get those much needed calories/protein and help you pack
+                on lean muscle mass.
+            </p>
+            <figure>
+                <img src="images/mainpic.jpg" width="775" height="480" alt="weightlifter">
+                <figcaption>Pump Iron</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <a href="home.html">Home</a> &nbsp;
+            <a href="exercise1.html">Deadlift/Squat</a> &nbsp;
+            <a href="exercise2.html">Rows/Bench</a> &nbsp;
+            <a href="exercise3.html">Overhead Press</a> &nbsp;
+            <a href="recipes.html">Recipes</a> &nbsp;
+            <a href="contact.html">Contact</a>
+            <hr />Published by One More Rep Inc.<br />
+            Copyright &copy; 2020 Ben Ward<br />
+            <a href="mailto:onemorerep@gmail.com">onemorerep@gmail.com</a>
+            <p id="demo"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d;
+            </script><br />
+            <script>
+                var m = "This page was last updated: " + document.lastModified;
+                var p = m.length - 8;
+                document.writeln("<center>");
+                document.write(m.substring(p, 0));
+                document.writeln("</center>");            
+            </script>
+        </footer>
+    </div> <!-- end of wrapper -->
+</body>
+</html>
+
+

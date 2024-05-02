@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>One More Rep</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lift.css">
+    <link rel="icon" href="images/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+    <script>alert("Overhead Press...Our Favorite!")</script>
+<div id="wrapper">
+  <header>
+    <h1>One More Rep</h1>
+    <div id="tag">Lift Heavy Things!</div>
+  </header>
+  <nav>
+    <ul>
+	 <li><a href="home.html">Home</a></li>
+     <li><a href="exercise1.html">Deadlift/Squat</a></li>
+     <li><a href="exercise2.html">Rows/Bench</a></li>
+     <li><a href="exercise3.html">Overhead Press</a></li>
+     <li><a href="recipes.html">Recipes</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav> 
+  <main>
+      <h2>Overhead Press</h2>
+      <p>
+          Stand with the bar on your front shoulders gripping the bar strongly.
+          Lift your chest while arching your upper back. Hold the bar and press
+          it in a vertical line, locking your shoulders while pressing it over
+          the head. Stay close to the bar while you press the weight up, while
+          slowly shifting your torso forward once the bar has passed your forehead.
+          Hold the bar over your shoulders, without bending your legs for proper balance.
+      </p>
+      <figure>
+          <img src="images/ohp.jpg" width="250" height="250" alt="Overhead Press">
+          <figcaption>Overhead Press</figcaption>
+      </figure>
+      <form action="/action_page.php" method="get">
+          Enter your favorite lift: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+          <input type="submit" value="Submit">
+      </form>
+  </main> 
+  <footer>
+      <a href="home.html">Home</a>
+      <a href="exercise1.html">Deadlift/Squat</a> &nbsp;
+      <a href="exercise2.html">Rows/Bench</a> &nbsp;
+      <a href="exercise3.html">Overhead Press</a> &nbsp;
+      <a href="recipes.html">Recipes</a> &nbsp;
+      <a href="contact.html">Contact</a>
+      <hr />Published by One More Rep Inc.<br />
+      Copyright &copy; 2020 Ben Ward<br />
+      <a href="mailto:onemorerep@gmail.com">onemorerep@gmail.com</a>
+      <p id="demo"></p>
+      <script>
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d;
+      </script>
+      <script>
+          var m = "This page was last updated: " + document.lastModified;
+          var p = m.length - 8;
+          document.writeln("<center>");
+          document.write(m.substring(p, 0));
+          document.writeln("</center>");
+      </script>
+  </footer>  
+  </div> <!-- end of wrapper -->
+</body>
+</html>
+
+
